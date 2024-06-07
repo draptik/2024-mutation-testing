@@ -1,11 +1,7 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
-
 To start the slide show:
 
-- `npm install`
-- `npm run dev`
+- `npm install` (only needed for initial setup or when `package.json` was modified)
+- `npm run dev` (or run `./start-presentation.sh`)
 - visit http://localhost:3030
 
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+[Slidev documentation](https://sli.dev/)
