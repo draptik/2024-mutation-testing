@@ -27,7 +27,6 @@ jobs:
             cd ${{ env.PRESENTATION_FOLDER }}
             npm install
 
-      # Ensure to set the base directory to the current branch name
       - name: Build
         run: |
             cd ${{ env.PRESENTATION_FOLDER }}
