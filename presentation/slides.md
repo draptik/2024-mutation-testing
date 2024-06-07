@@ -61,7 +61,7 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 - 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
 - 🤹 **Interactive** - embedding Vue components to enhance your expressions
 - 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
+- 📤 **Portable** - export into PDF, PPTX, PNGs, or even a hostable SPA
 - 🛠 **Hackable** - anything possible on a webpage
 
 <br>
@@ -199,7 +199,7 @@ Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev sup
 
 Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
 
-````md magic-move
+````md magic-move {lines: true}
 ```ts {*|2|*}
 // step 1
 const author = reactive({
@@ -560,6 +560,51 @@ database "MySql" {
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
 
 ---
+foo: bar
+dragPos:
+  square: 691,32,167,_,-16
+---
+
+# Draggable Elements
+
+Double-click on the draggable elements to edit their positions.
+
+<br>
+
+###### Directive Usage
+
+```md
+<img v-drag="'square'" src="https://sli.dev/logo.png">
+```
+
+<br>
+
+###### Component Usage
+
+```md
+<v-drag text-3xl>
+  <carbon:arrow-up />
+  Use the `v-drag` component to have a draggable container!
+</v-drag>
+```
+
+<v-drag pos="663,206,261,_,-15">
+  <div text-center text-3xl border border-main rounded>
+    Double-click me!
+  </div>
+</v-drag>
+
+<img v-drag="'square'" src="https://sli.dev/logo.png">
+
+###### Draggable Arrow
+
+```md
+<v-drag-arrow two-way />
+```
+
+<v-drag-arrow pos="67,452,253,46" two-way op70 />
+
+---
 src: ./pages/multiple-entries.md
 hide: false
 ---
@@ -574,23 +619,20 @@ Add `{monaco}` to the code block to turn it into an editor:
 
 ```ts {monaco}
 import { ref } from 'vue'
-import hello from './external'
+import { emptyArray } from './external'
 
-const code = ref(hello())
+const arr = ref(emptyArray(10))
 ```
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
 
 ```ts {monaco-run}
 import { version } from 'vue'
+import { emptyArray, sayHello } from './external'
 
-function fibonacci(n: number): number {
-  return n <= 1
-    ? n
-    : fibonacci(n - 1) + fibonacci(n - 2) // you know, this is NOT the best way to do it :P
-}
-
-console.log(version, Array.from({ length: 10 }, (_, i) => fibonacci(i + 1)))
+sayHello()
+console.log(`vue ${version}`)
+console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
 ```
 
 ---
