@@ -3,7 +3,7 @@
 - <mdi-email /> patrick.drechsler@mathema.de
 - <logos-github-icon /> https://github.com/draptik
 - <mdi-web /> Blog: https://draptik.github.io
-- <logos-mastodon-icon /> @drechsler@floss.social
+- <logos-mastodon-icon /> [@drechsler@floss.social](https://floss.social/@drechsler)
 - <logos-linkedin-icon /> https://www.linkedin.com/in/patrick-drechsler-draptik/
 
 Slides 👇
