@@ -10,5 +10,7 @@
     <Nullable>enable</Nullable>
     <NeutralLanguage>en</NeutralLanguage>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 </Project>
