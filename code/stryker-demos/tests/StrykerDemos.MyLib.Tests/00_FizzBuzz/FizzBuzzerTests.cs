@@ -1,4 +1,6 @@
-namespace StrykerDemos.MyLib.Tests;
+using StrykerDemos.MyLib._00_FizzBuzz;
+
+namespace StrykerDemos.MyLib.Tests._00_FizzBuzz;
 
 public class FizzBuzzerTests
 {

@@ -1,4 +1,4 @@
-﻿namespace StrykerDemos.MyLib;
+﻿namespace StrykerDemos.MyLib._00_FizzBuzz;
 
 public static class FizzBuzzer
 {
