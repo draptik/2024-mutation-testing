@@ -11,6 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CEA3C9ED
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrykerDemos.MyLib.Tests", "tests\StrykerDemos.MyLib.Tests\StrykerDemos.MyLib.Tests.csproj", "{98D40E07-5EC7-41CC-8A73-28EC3B120795}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{C5AE1A24-F34C-431E-AFE9-722B1AD0A9C2}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{B8D91331-6C0A-4486-88F0-C110901D43BE}"
+	ProjectSection(SolutionItems) = preProject
+		tests\.editorconfig = tests\.editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +45,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6CD40DA6-AB46-461C-BA4F-73143F0E6750} = {E1B79AE8-24AA-43F9-963C-3FA1891814C5}
 		{98D40E07-5EC7-41CC-8A73-28EC3B120795} = {CEA3C9ED-13E0-43C8-A159-4DB9AF11769C}
+		{B8D91331-6C0A-4486-88F0-C110901D43BE} = {CEA3C9ED-13E0-43C8-A159-4DB9AF11769C}
 	EndGlobalSection
 EndGlobal
