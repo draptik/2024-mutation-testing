@@ -364,3 +364,6 @@ dotnet_naming_style.s_camelcase.word_separator =
 dotnet_naming_style.s_camelcase.capitalization = camel_case
 
 csharp_style_namespace_declarations = file_scoped
+
+# ignore formatting rules for this demo app
+dotnet_diagnostic.IDE0055.severity = none
