@@ -28,6 +28,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{B961C1CB-EFE3-4279-9360-AB6BCA165C83}"
 	ProjectSection(SolutionItems) = preProject
 		src\Directory.Build.props = src\Directory.Build.props
+		src\.editorconfig = src\.editorconfig
 	EndProjectSection
 EndProject
 Global
