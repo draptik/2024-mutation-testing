@@ -1,5 +1,7 @@
 ﻿namespace StrykerDemos.MyLibFSharp
 
-module Say =
-    let hello (name: string) : string =
-        name
+open Microsoft.FSharp.Core
+
+module SomeService =
+    let isSmallerThan (baseLine: int) (value: int) =
+        value < baseLine
