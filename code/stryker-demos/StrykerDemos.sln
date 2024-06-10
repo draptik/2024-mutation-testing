@@ -22,6 +22,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{B8D91331-6C0A-4486-88F0-C110901D43BE}"
 	ProjectSection(SolutionItems) = preProject
 		tests\.editorconfig = tests\.editorconfig
+		tests\Directory.Build.props = tests\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{B961C1CB-EFE3-4279-9360-AB6BCA165C83}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
 	EndProjectSection
 EndProject
 Global
@@ -46,5 +52,6 @@ Global
 		{6CD40DA6-AB46-461C-BA4F-73143F0E6750} = {E1B79AE8-24AA-43F9-963C-3FA1891814C5}
 		{98D40E07-5EC7-41CC-8A73-28EC3B120795} = {CEA3C9ED-13E0-43C8-A159-4DB9AF11769C}
 		{B8D91331-6C0A-4486-88F0-C110901D43BE} = {CEA3C9ED-13E0-43C8-A159-4DB9AF11769C}
+		{B961C1CB-EFE3-4279-9360-AB6BCA165C83} = {E1B79AE8-24AA-43F9-963C-3FA1891814C5}
 	EndGlobalSection
 EndGlobal
