@@ -16,4 +16,12 @@ public class OrderProcessor
 
         return orderAmount;
     }
+
+    // public static decimal ApplyDiscount(decimal orderAmount) =>
+    //     orderAmount switch
+    //     {
+    //         >= 100 and < 500 => orderAmount * 0.95m, // 5% discount
+    //         >= 500 => orderAmount * 0.90m, // 10% discount
+    //         _ => orderAmount
+    //     };
 }
