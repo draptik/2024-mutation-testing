@@ -331,6 +331,7 @@ dotnet_naming_symbols.local_functions.applicable_accessibilities = *
 dotnet_naming_symbols.local_functions.required_modifiers = 
 
 # Naming styles
+# Naming styles
 
 dotnet_naming_style.pascalcase.required_prefix = 
 dotnet_naming_style.pascalcase.required_suffix = 
