@@ -53,16 +53,70 @@ It's that simple.
 
 (Source: [https://stryker-mutator.io/docs/](https://stryker-mutator.io/docs/))
 
+
+---
+layout: two-cols-header
+clicks: 2
 ---
 
-### TODO Simplified Workflow
+### Hello-World Example
+
+::left::
+
+Production code:
 
 ```csharp
-public string DoMagic(int i)
+public string DoMagic(int i) => i < 18 ? "child" : "adult"
+```
+
+<div v-click>
+
+- `dotnet stryker`
+- it creates a mutant replacing `<` with `<=`
+
+```csharp
+public string DoMagic(int i) => i <= 18 ? "child" : "adult"
+```
+
+</div>
+
+<arrow v-click="[1]" x1="312" y1="110" x2="312" y2="140" color="red" width="2" arrowSize="1" />
+<arrow v-click="[1]" x1="315" y1="310" x2="315" y2="280" color="red" width="2" arrowSize="1" />
+
+<div v-click="[2]">
+
+- The mutant "survived"
+- The mutant did not provoke a test failure!
+- ⚠️ Our test suite might not be good enough! ⚠️
+
+</div>
+
+::right::
+
+Test suite (100% code coverage!):
+
+```csharp
+[Theory]
+[InlineData(10, "child")]
+[InlineData(20, "adult")]
+public void DoMagic_works(int input, string expected)
 {
-  // TODO
+  DoMagic(input).Should().Be(expected)
 }
 ```
+
+<style>
+.col-bottom {
+  align-self: end;
+  grid-area: 3 / 1 / 4 / 3; /* Adjust this to correctly place the bottom area */
+}
+.two-cols-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 20px; /* Adjust the gap size as needed */
+}
+</style>
 
 
 ---

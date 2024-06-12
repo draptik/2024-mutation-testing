@@ -29,4 +29,12 @@ public class SomeServiceTests
             .Should()
             .BeFalse("8 is larger than 5");
     }
+
+    [Theory]
+    [InlineData(10, "child")]
+    [InlineData(20, "adult")]
+    public void DoMagic_works(int input, string expected)
+    {
+        SomeService.DoMagic(input).Should().Be(expected);
+    }
 }

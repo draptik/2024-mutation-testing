@@ -13,4 +13,6 @@ public class SomeService
     {
         return number < BaseLine;
     }
+
+    public static string DoMagic(int i) => i < 18 ? "child" : "adult";
 }
