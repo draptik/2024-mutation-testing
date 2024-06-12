@@ -43,7 +43,7 @@ todo
 
 ---
 
-## TODO What is mutation testing?
+## What is mutation testing?
 
 TL; DR: Mutation testing introduces changes to your code, then runs your unit tests against the changed code. It is expected that your unit tests will now fail. If they don't fail, it might indicate your tests do not sufficiently cover the code.
 
@@ -118,6 +118,19 @@ public void DoMagic_works(int input, string expected)
 }
 </style>
 
+
+---
+
+## Mutations
+
+Let's have a look at mutations: [https://stryker-mutator.io/docs/stryker-net/mutations/](https://stryker-mutator.io/docs/stryker-net/mutations/)
+
+Most mutations are language agnostic. Some are optimized for C#:
+
+- [Initializers](https://stryker-mutator.io/docs/stryker-net/mutations/#initialization-initializer)
+- [Removal](https://stryker-mutator.io/docs/stryker-net/mutations/#removal-mutators-statement-block)
+- [Linq](https://stryker-mutator.io/docs/stryker-net/mutations/#linq-methods-linq)
+- [Null-coalescing Operators](https://stryker-mutator.io/docs/stryker-net/mutations/#null-coalescing-operators-nullcoalescing)
 
 ---
 
