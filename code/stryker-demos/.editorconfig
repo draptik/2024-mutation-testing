@@ -367,3 +367,9 @@ csharp_style_namespace_declarations = file_scoped
 
 # ignore formatting rules for this demo app
 dotnet_diagnostic.IDE0055.severity = none
+
+# allow underscore in namespace names
+dotnet_diagnostic.CA1707.severity = none
+
+# does not access instance data and can be marked as static
+dotnet_diagnostic.CA1822.severity = none
