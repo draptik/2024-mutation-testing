@@ -1,4 +1,7 @@
-﻿namespace StrykerDemos.MyLib._00_FizzBuzz;
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace StrykerDemos.MyLib._00_FizzBuzz;
 
 public static class FizzBuzzer
 {
