@@ -174,6 +174,7 @@ Most mutations are language agnostic. Some are optimized for C#:
 - BUT: These frameworks have smart heuristics for short circuiting
 - CI: Don't include this in normal commits
 - CI: "Nightly", or local (for exploratory analysis)
+- Google uses Mutation Testing on really large projects: https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/
 
 ---
 
