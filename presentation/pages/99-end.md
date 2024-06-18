@@ -11,7 +11,7 @@ Slides 👇
 - QR Code or
 - https://draptik.github.io/2024-07-dwx24-mutation-testing
 - sample code:
-  https://github.com/draptik/2024-07-dwx24-stryker
+  https://github.com/draptik/2024-mutation-testing
 
 <img
   class="absolute top-10 right-30 h-70"
