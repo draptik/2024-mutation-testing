@@ -25,33 +25,57 @@ src: ./pages/01-intro.md
 
 ---
 
-## TODO Intro: Testing
+## "Metrics"
 
-- Unit test
-- Integration test
-- End-to-End test
+- W. Edwards Deming: "It is wrong to suppose that if you can't measure it, you can't manage it - **a costly myth**." 
+- **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**. 
+- **Goodhart's Law**, states that "**When a measure becomes a target, it ceases to be a good measure**" (as paraphrased by Marilyn Strathern). 
 
-Test pyramid
-
-TDD, BDD, etc
+[https://www.nngroup.com/articles/campbells-law/](https://www.nngroup.com/articles/campbells-law/)
 
 ---
 
-## TODO Test coverage
+## Test coverage
 
-todo
+- defines the percentage of covered code
+- 100% test coverage means, every line of code is executed at least once
+- 100% test coverage does not mean that every scenario / use-case is covered
+
+---
+
+## Is Test coverage a good metric?
+
+- not every line of code needs to be tested
+- BUT: having no tests is obviously also not a good idea
+- anything above 60% is a good baseline ("it depends")
+- test coverage does not tell us anything about the **quality** of the tests
+
+<img
+  class="absolute bottom-20 left-5 w-80"
+  src="/images/meme-failing-tests-1.gif"
+/>
+<img
+  class="absolute bottom-15 left-87 w-70"
+  src="/images/meme-failing-tests-2.gif"
+/>
+<img
+  class="absolute bottom-20 right-5 w-80"
+  src="/images/meme-failing-tests-3.gif"
+/>
 
 ---
 
 ## What is mutation testing?
 
-TL; DR: Mutation testing introduces changes to your code, then runs your unit tests against the changed code. It is expected that your unit tests will now fail. If they don't fail, it might indicate your tests do not sufficiently cover the code.
+[https://stryker-mutator.io/docs/](https://stryker-mutator.io/docs/)
 
-Bugs, or mutants, are automatically inserted into your production code. Your tests are run for each mutant. If your tests fail then the mutant is killed. If your tests passed, the mutant survived. The higher the percentage of mutants killed, the more effective your tests are.
+<v-clicks>
 
-It's that simple.
+- **TL; DR**: Mutation testing introduces changes to your code, then runs your unit tests against the changed code. It is expected that your unit tests will now fail. If they don't fail, it might indicate your tests do not sufficiently cover the code.
+- Bugs, or mutants, are automatically inserted into your production code. Your tests are run for each mutant. If your tests fail then the mutant is killed. If your tests passed, the mutant survived. The higher the percentage of mutants killed, the more effective your tests are.
 
-(Source: [https://stryker-mutator.io/docs/](https://stryker-mutator.io/docs/))
+</v-clicks>
+
 
 
 ---
@@ -93,7 +117,7 @@ public string DoMagic(int i) => i <= 18 ? "child" : "adult"
 
 ::right::
 
-Test suite (100% code coverage!):
+Test suite (**100% code coverage!**):
 
 ```csharp
 [Theory]
@@ -131,6 +155,91 @@ Most mutations are language agnostic. Some are optimized for C#:
 - [Removal](https://stryker-mutator.io/docs/stryker-net/mutations/#removal-mutators-statement-block)
 - [Linq](https://stryker-mutator.io/docs/stryker-net/mutations/#linq-methods-linq)
 - [Null-coalescing Operators](https://stryker-mutator.io/docs/stryker-net/mutations/#null-coalescing-operators-nullcoalescing)
+
+---
+
+## Reports: HTML (Overview)
+
+<img
+  class="absolute bottom-40 right-30 h-70"
+  src="/images/report-example-overview-html.png"
+/>
+
+---
+ 
+## Reports: HTML (Details)
+
+<img
+  class="absolute top-30 left-30 h-100"
+  src="/images/report-example-details-html.png"
+/>
+
+---
+layout: two-cols-header
+clicks: 7
+---
+
+## Other Reporters
+
+::left::
+
+<v-clicks>
+
+- Progress
+- Dashboard
+- Cleartext
+- Cleartext tree
+- Dots (for CI)
+- Json (basis for HTML)
+- Markdown
+
+</v-clicks>
+
+::right::
+
+<img v-click="[1]"
+  class="absolute top-10 h-70"
+  src="/images/report-example-overview-progress.png"
+/>
+
+<img v-click="[3]"
+  class="absolute top-10 h-75"
+  src="/images/report-example-overview-cleartext.png"
+/>
+
+<img v-click="[4]"
+  class="absolute top-10 h-125"
+  src="/images/report-example-overview-cleartexttree.png"
+/>
+
+<img v-click="[5]"
+  class="absolute top-10 h-10"
+  src="/images/report-example-overview-dots.png"
+/>
+
+<div v-click="[7]" style="font-size: 35%">
+
+| File                                   | Score   | Killed | Survived | Timeout | No Coverage | Ignored | Compile Errors | Total Detected | Total Undetected | Total Mutants |
+| -------------------------------------- | ------- | ------ | -------- | ------- | ----------- | ------- | -------------- | -------------- | ---------------- | ------------- |
+| 00\_FizzBuzz\/FizzBuzzer.cs            | 100.00% | 14     | 0        | 0       | 0           | 4       | 0              | 14             | 0                | 18            |
+| 01\_CaptainObvious\/SomeService.cs     | 75.00%  | 6      | 2        | 0       | 0           | 1       | 0              | 6              | 2                | 9             |
+| 02\_OrderProcessing\/OrderProcessor.cs | 72.73%  | 8      | 3        | 0       | 0           | 3       | 0              | 8              | 3                | 14            |
+| 03\_Palindrome\/PalindromeChecker.cs   | 50.00%  | 2      | 2        | 0       | 0           | 2       | 1              | 2              | 2                | 7             |
+
+</div>
+
+<style>
+.col-bottom {
+  align-self: end;
+  grid-area: 3 / 1 / 4 / 3; /* Adjust this to correctly place the bottom area */
+}
+.two-cols-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 20px; /* Adjust the gap size as needed */
+}
+</style>
 
 ---
 
