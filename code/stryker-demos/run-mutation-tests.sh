@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 #
 # Sometimes the IDE (f.ex. Rider) doesn't catch up quickly enough so it's easier to run 
 # `dotnet clean` after running `dotnet stryker`.
