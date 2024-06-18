@@ -290,12 +290,25 @@ Also nice: use git as baseline, only test things that have changed recently
 
 ---
 
-## TODO Other languages
+## Available in many languages
 
-- Java
-- JavaScript
-- etc.
+- JavaScript: https://stryker-mutator.io/docs/stryker-js/
+- Scala: https://stryker-mutator.io/docs/stryker4s/
+- Java: https://pitest.org/
+- Python: https://mutatest.readthedocs.io
+- etc (search for "your-programming-language mutation test")
 
+---
+
+## Mutation Testing: Summary
+
+- none-invasive: no code changes required!
+- great for finding corner cases
+- requires a lot of resources: use wisely
+- great addition to our "Testing Toolbelt":
+  - Test-Driven Development (TDD)
+  - Approval Testing
+  - Property-Based Testing (PBT)
 
 ---
 src: ./pages/99-end.md
