@@ -64,6 +64,12 @@ src: ./pages/01-intro.md
 />
 
 ---
+layout: image
+image: /images/whos-testing-the-tests-meme.jpg
+backgroundSize: contain
+---
+
+---
 
 ## What is mutation testing?
 
@@ -144,6 +150,9 @@ public void DoMagic_works(int input, string expected)
 
 
 ---
+layout: image-right
+image: "/images/cute-zombie4.jpg"
+---
 
 ## Mutations
 
@@ -155,6 +164,26 @@ Most mutations are language agnostic. Some are optimized for C#:
 - [Removal](https://stryker-mutator.io/docs/stryker-net/mutations/#removal-mutators-statement-block)
 - [Linq](https://stryker-mutator.io/docs/stryker-net/mutations/#linq-methods-linq)
 - [Null-coalescing Operators](https://stryker-mutator.io/docs/stryker-net/mutations/#null-coalescing-operators-nullcoalescing)
+
+---
+
+## Isn't this slow?
+
+- Short answer: YES
+- The mutation testing framework has to recompile the production code for every mutation!
+- BUT: These frameworks have smart heuristics for short circuiting
+- CI: Don't include this in normal commits
+- CI: "Nightly", or local (for exploratory analysis)
+
+---
+
+## Live coding
+
+<img
+  class="absolute top-5 right-50 h-125"
+  src="/images/cute-zombie3.png"
+/>
+
 
 ---
 
@@ -185,13 +214,13 @@ clicks: 7
 
 <v-clicks>
 
-- Progress
-- Dashboard
-- Cleartext
-- Cleartext tree
-- Dots (for CI)
-- Json (basis for HTML)
-- Markdown
+- [Progress](https://stryker-mutator.io/docs/stryker-net/reporters/#progress-reporter)
+- [Dashboard](https://stryker-mutator.io/docs/stryker-net/reporters/#dashboard-reporter)
+- [Cleartext](https://stryker-mutator.io/docs/stryker-net/reporters/#cleartext-reporter)
+- [Cleartext tree](https://stryker-mutator.io/docs/stryker-net/reporters/#cleartext-tree-reporter)
+- [Dots (for CI)](https://stryker-mutator.io/docs/stryker-net/reporters/#dots-reporter)
+- [Json (basis for HTML)](https://stryker-mutator.io/docs/stryker-net/reporters/#json-reporter)
+- [Markdown](https://stryker-mutator.io/docs/stryker-net/reporters/#markdown-summary-reporter)
 
 </v-clicks>
 
@@ -243,7 +272,25 @@ clicks: 7
 
 ---
 
-## Other languages
+## Fine-Tuning
+
+Stryker provides many bells & whistles for fine-tuning using either [CLI or config file](https://stryker-mutator.io/docs/stryker-net/configuration/).
+
+Some examples:
+
+- [`mutate`](https://stryker-mutator.io/docs/stryker-net/configuration/#mutate-glob): Globbing patterns for including/excluding
+- [`test-case-filter`](https://stryker-mutator.io/docs/stryker-net/configuration/#test-case-filter-string): filter selective subset(s) of tests
+- [`mutation-level`](https://stryker-mutator.io/docs/stryker-net/configuration/#mutation-level-level): high level categories (`Basic`, `Standard`, `Advanced`, `Complete`)
+- [`coverage-analysis`](https://stryker-mutator.io/docs/stryker-net/configuration/#coverage-analysis-string): short circuit logic vs "everything in isolation"
+
+Also nice: use git as baseline, only test things that have changed recently
+
+- [`since`](https://stryker-mutator.io/docs/stryker-net/configuration/#since-flag-committish): git "committish" (i.e. commit hash, tag, etc)
+- [`with-baseline`](https://stryker-mutator.io/docs/stryker-net/configuration/#with-baseline-flag-committish) (experimental): similar to `since`, but uses previous reports
+
+---
+
+## TODO Other languages
 
 - Java
 - JavaScript
