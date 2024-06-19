@@ -222,7 +222,7 @@ clicks: 7
 <v-clicks>
 
 - [Progress](https://stryker-mutator.io/docs/stryker-net/reporters/#progress-reporter)
-- [Dashboard](https://stryker-mutator.io/docs/stryker-net/reporters/#dashboard-reporter)
+- [Dashboard (?)](https://stryker-mutator.io/docs/stryker-net/reporters/#dashboard-reporter)
 - [Cleartext](https://stryker-mutator.io/docs/stryker-net/reporters/#cleartext-reporter)
 - [Cleartext tree](https://stryker-mutator.io/docs/stryker-net/reporters/#cleartext-tree-reporter)
 - [Dots (for CI)](https://stryker-mutator.io/docs/stryker-net/reporters/#dots-reporter)
@@ -236,6 +236,11 @@ clicks: 7
 <img v-click="[1]"
   class="absolute top-10 h-70"
   src="/images/report-example-overview-progress.png"
+/>
+
+<img v-click="[2]"
+  class="absolute top-10 h-75"
+  src="/images/stryker-dashboard.png"
 />
 
 <img v-click="[3]"
