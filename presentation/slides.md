@@ -300,8 +300,12 @@ Also nice: use git as baseline, only test things that have changed recently
 - etc (search for "your-programming-language mutation test")
 
 ---
+clicks: 4
+---
 
 ## Mutation Testing: Summary
+
+<v-clicks>
 
 - none-invasive: no code changes required!
 - great for finding corner cases
@@ -310,6 +314,14 @@ Also nice: use git as baseline, only test things that have changed recently
   - Test-Driven Development (TDD)
   - Approval Testing
   - Property-Based Testing (PBT)
+
+</v-clicks>
+
+<img v-click="[4]"
+  class="absolute top-40 right-20 w-100"
+  src="/images/toolbelt.png"
+/>
+
 
 ---
 src: ./pages/99-end.md
