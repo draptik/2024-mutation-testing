@@ -176,6 +176,12 @@ Most mutations are language agnostic. Some are optimized for C#:
 - CI: "Nightly", or local (for exploratory analysis)
 - Google uses Mutation Testing on really large projects: https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/
 
+<img
+  class="absolute top-5 right-50 h-25"
+  src="/images/snail-pixabay.webp"
+/>
+
+
 ---
 
 ## Live coding
