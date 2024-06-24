@@ -27,11 +27,15 @@ src: ./pages/01-intro.md
 
 ## "Metrics"
 
-- W. Edwards Deming: "It is wrong to suppose that if you can't measure it, you can't manage it - **a costly myth**." 
-- **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**. 
-- **Goodhart's Law**, states that "**When a measure becomes a target, it ceases to be a good measure**" (as paraphrased by Marilyn Strathern). 
-
 [https://www.nngroup.com/articles/campbells-law/](https://www.nngroup.com/articles/campbells-law/)
+
+<v-clicks>
+
+- "It is wrong to suppose that if you can't measure it, you can't manage it - **a costly myth**." - W. Edwards Deming
+- **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**. 
+- **Goodhart's Law**, states that "**When a measure becomes a target, it ceases to be a good measure**"  
+
+</v-clicks>
 
 ---
 
@@ -77,8 +81,9 @@ backgroundSize: contain
 
 <v-clicks>
 
-- **TL; DR**: Mutation testing introduces changes to your code, then runs your unit tests against the changed code. It is expected that your unit tests will now fail. If they don't fail, it might indicate your tests do not sufficiently cover the code.
-- Bugs, or mutants, are automatically inserted into your production code. Your tests are run for each mutant. If your tests fail then the mutant is killed. If your tests passed, the mutant survived. The higher the percentage of mutants killed, the more effective your tests are.
+- Mutation testing **introduces changes to your code**, then runs your unit tests against **the changed code**. 
+- the "change" is called a **mutant**
+- If our test suite is ok for a "mutant:" Ups, we missed something
 
 </v-clicks>
 
@@ -171,10 +176,11 @@ Most mutations are language agnostic. Some are optimized for C#:
 
 - Short answer: YES
 - The mutation testing framework has to recompile the production code for every mutation!
-- BUT: These frameworks have smart heuristics for short circuiting
+- BUT: **These frameworks have smart heuristics for short circuiting**
 - CI: Don't include this in normal commits
 - CI: "Nightly", or local (for exploratory analysis)
 - Google uses Mutation Testing on really large projects: https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/
+  - It is still slow
 
 <img
   class="absolute top-5 right-50 h-25"
