@@ -1,2 +1,2 @@
 #!/bin/sh
-dotnet stryker --config-file stryker-config-default.json
+dotnet stryker --open-report:html --config-file stryker-config-default.json

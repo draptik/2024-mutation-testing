@@ -5,4 +5,4 @@
 #
 # TODO Figure out what the problem is.
 #
-dotnet stryker && dotnet clean
+dotnet stryker --open-report:html && dotnet clean
