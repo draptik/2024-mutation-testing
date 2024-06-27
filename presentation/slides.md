@@ -140,6 +140,13 @@ public void DoMagic_works(int input, string expected)
 }
 ```
 
+<img
+  v-click="[2]"
+  class="absolute bottom-5 right-30 h-120"
+  src="/images/mutant-monster2.jpg"
+/>
+
+
 <style>
 .col-bottom {
   align-self: end;
@@ -163,7 +170,7 @@ image: "/images/cute-zombie4.jpg"
 
 Let's have a look at mutations: [https://stryker-mutator.io/docs/stryker-net/mutations/](https://stryker-mutator.io/docs/stryker-net/mutations/)
 
-Most mutations are language agnostic. 
+Most mutations are language agnostic
 
 Some are optimized for .NET:
 
@@ -195,7 +202,7 @@ image: /images/mutant-monster6.jpg
 
 ## Mutation Strategies
 
-🤔 How do frameworks optimize performance?
+🤔 How do these frameworks optimize performance?
 
 [https://stryker-mutator.io/docs/stryker-net/technical-reference/research/#comparison](https://stryker-mutator.io/docs/stryker-net/technical-reference/research/#comparison)
 
