@@ -1,6 +1,6 @@
-using StrykerDemos.MyLib._03_Palindrome;
+using StrykerDemos.MyLib._04_Palindrome;
 
-namespace StrykerDemos.MyLib.Tests._03_Palindrome;
+namespace StrykerDemos.MyLib.Tests._04_Palindrome;
 
 public class PalindromeCheckerTests
 {

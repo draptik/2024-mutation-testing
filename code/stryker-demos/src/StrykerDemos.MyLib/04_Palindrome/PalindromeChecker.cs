@@ -1,4 +1,4 @@
-namespace StrykerDemos.MyLib._03_Palindrome;
+namespace StrykerDemos.MyLib._04_Palindrome;
 
 public static class PalindromeChecker
 {

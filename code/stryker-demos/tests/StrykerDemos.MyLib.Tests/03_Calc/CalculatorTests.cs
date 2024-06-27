@@ -1,6 +1,6 @@
-using StrykerDemos.MyLib._04_Calc;
+using StrykerDemos.MyLib._03_Calc;
 
-namespace StrykerDemos.MyLib.Tests._04_Calc;
+namespace StrykerDemos.MyLib.Tests._03_Calc;
 
 public class CalculatorTests
 {

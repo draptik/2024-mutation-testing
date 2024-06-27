@@ -1,4 +1,4 @@
-namespace StrykerDemos.MyLib._04_Calc;
+namespace StrykerDemos.MyLib._03_Calc;
 
 public static class Calculator
 {
