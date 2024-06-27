@@ -22,7 +22,7 @@ public class FizzBuzzerTests
     [Fact]
     public void When_given_1_return_1() => FizzBuzz(1).Should().Be("1");
 
-    [Fact]
+    [Fact(Skip = "Demo")]
     public void When_given_numbers_1_to_15_return_correct_list() =>
         FizzBuzzNumbers(15)
             .Should()
