@@ -41,6 +41,6 @@ public class CalculatorTests
     {
         var result = Calculator.Divide(1, 0);
 
-        result.Should().BeNull("division by zero fails");
+        result.Should().BeNull("division by zero should fail");
     }
 }
