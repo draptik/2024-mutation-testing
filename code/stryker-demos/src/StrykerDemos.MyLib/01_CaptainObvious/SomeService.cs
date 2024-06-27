@@ -1,13 +1,8 @@
 namespace StrykerDemos.MyLib._01_CaptainObvious;
 
-public class SomeService
+public class SomeService(int baseLine)
 {
-    private int BaseLine { get; }
-
-    public SomeService(int baseLine)
-    {
-        BaseLine = baseLine;
-    }
+    private int BaseLine { get; } = baseLine;
 
     public bool IsSmallerThanBaseline(int number)
     {
