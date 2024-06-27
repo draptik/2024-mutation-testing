@@ -142,7 +142,7 @@ public void DoMagic_works(int input, string expected)
 
 <img
   v-click="[2]"
-  class="absolute bottom-5 right-30 h-120"
+  class="absolute bottom-5 right-75 h-60"
   src="/images/mutant-monster2.jpg"
 />
 
@@ -337,6 +337,18 @@ Also nice: use git as baseline, only test things that have changed recently
 - [`with-baseline`](https://stryker-mutator.io/docs/stryker-net/configuration/#with-baseline-flag-committish) (experimental): similar to `since`, but uses previous reports
 
 </v-clicks>
+
+---
+layout: image-right
+image: "/images/logo-fsharp.png"
+---
+
+## What about F#?
+
+- The team noticed they had to rearchitect the framework (.NET is not only C#)
+- This is a good thing!
+- Strategy is clearly communicated!
+- 🥳
 
 ---
 
