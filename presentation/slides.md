@@ -25,7 +25,7 @@ src: ./pages/01-intro.md
 
 ---
 
-## "Metrics"
+## Let's talk about "Metrics"...
 
 [https://www.nngroup.com/articles/campbells-law/](https://www.nngroup.com/articles/campbells-law/)
 
@@ -41,17 +41,17 @@ src: ./pages/01-intro.md
 
 ## Test coverage
 
-- defines the percentage of covered code
-- 100% test coverage means, every line of code is executed at least once
-- 100% test coverage does not mean that every scenario / use-case is covered
+- 🎓 defines the percentage of covered code
+- ✅ 100% test coverage means, every line of code is executed at least once
+- ⚠️ 100% test coverage **does not mean that every scenario / use-case is covered**
 
 ---
 
-## Is Test coverage a good metric?
+## Is Test coverage a "good metric"?
 
 - not every line of code needs to be tested
 - BUT: having no tests is obviously also not a good idea
-- anything above 60% is a good baseline ("it depends")
+- anything above 60% is a good baseline (but, "it depends")
 - test coverage does not tell us anything about the **quality** of the tests
 
 <img
@@ -163,7 +163,9 @@ image: "/images/cute-zombie4.jpg"
 
 Let's have a look at mutations: [https://stryker-mutator.io/docs/stryker-net/mutations/](https://stryker-mutator.io/docs/stryker-net/mutations/)
 
-Most mutations are language agnostic. Some are optimized for C#:
+Most mutations are language agnostic. 
+
+Some are optimized for .NET:
 
 - [Initializers](https://stryker-mutator.io/docs/stryker-net/mutations/#initialization-initializer)
 - [Removal](https://stryker-mutator.io/docs/stryker-net/mutations/#removal-mutators-statement-block)
@@ -175,25 +177,40 @@ Most mutations are language agnostic. Some are optimized for C#:
 ## Isn't this slow?
 
 - Short answer: YES
-- The mutation testing framework has to recompile the production code for every mutation!
 - BUT: **These frameworks have smart heuristics for short circuiting**
 - CI: Don't include this in normal commits
-- CI: "Nightly", or local (for exploratory analysis)
+- CI: use "Nightly", or local (for exploratory analysis)
 - Google uses Mutation Testing on really large projects: https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/
   - It is still slow
 
 <img
-  class="absolute top-5 right-50 h-25"
+  class="absolute top-5 right-110 h-25"
   src="/images/snail-pixabay.webp"
 />
 
+---
+layout: image-right
+image: /images/mutant-monster6.jpg
+---
+
+## Mutation Strategies
+
+🤔 How do frameworks optimize performance?
+
+[https://stryker-mutator.io/docs/stryker-net/technical-reference/research/#comparison](https://stryker-mutator.io/docs/stryker-net/technical-reference/research/#comparison)
+
+- mutate source code
+- mutate byte code
+- mutant schemata (aka "mutant switching")
+
+👉 Stryker.NET uses "mutant schemata"
 
 ---
 
 ## Live coding
 
 <img
-  class="absolute top-5 right-50 h-125"
+  class="absolute top-5 right-80 h-125"
   src="/images/cute-zombie3.png"
 />
 
@@ -227,26 +244,21 @@ clicks: 7
 
 <v-clicks>
 
+- [Json (basis for HTML)](https://stryker-mutator.io/docs/stryker-net/reporters/#json-reporter)
 - [Progress](https://stryker-mutator.io/docs/stryker-net/reporters/#progress-reporter)
-- [Dashboard (?)](https://stryker-mutator.io/docs/stryker-net/reporters/#dashboard-reporter)
 - [Cleartext](https://stryker-mutator.io/docs/stryker-net/reporters/#cleartext-reporter)
 - [Cleartext tree](https://stryker-mutator.io/docs/stryker-net/reporters/#cleartext-tree-reporter)
 - [Dots (for CI)](https://stryker-mutator.io/docs/stryker-net/reporters/#dots-reporter)
-- [Json (basis for HTML)](https://stryker-mutator.io/docs/stryker-net/reporters/#json-reporter)
 - [Markdown](https://stryker-mutator.io/docs/stryker-net/reporters/#markdown-summary-reporter)
+- [Dashboard](https://stryker-mutator.io/docs/stryker-net/reporters/#dashboard-reporter)
 
 </v-clicks>
 
 ::right::
 
-<img v-click="[1]"
+<img v-click="[2]"
   class="absolute top-10 h-70"
   src="/images/report-example-overview-progress.png"
-/>
-
-<img v-click="[2]"
-  class="absolute top-10 h-75"
-  src="/images/stryker-dashboard.png"
 />
 
 <img v-click="[3]"
@@ -255,7 +267,7 @@ clicks: 7
 />
 
 <img v-click="[4]"
-  class="absolute top-10 h-125"
+  class="absolute top-3 h-130"
   src="/images/report-example-overview-cleartexttree.png"
 />
 
@@ -264,7 +276,7 @@ clicks: 7
   src="/images/report-example-overview-dots.png"
 />
 
-<div v-click="[7]" style="font-size: 35%">
+<div v-click="[6]" style="font-size: 35%">
 
 | File                                   | Score   | Killed | Survived | Timeout | No Coverage | Ignored | Compile Errors | Total Detected | Total Undetected | Total Mutants |
 | -------------------------------------- | ------- | ------ | -------- | ------- | ----------- | ------- | -------------- | -------------- | ---------------- | ------------- |
@@ -274,6 +286,11 @@ clicks: 7
 | 03\_Palindrome\/PalindromeChecker.cs   | 50.00%  | 2      | 2        | 0       | 0           | 2       | 1              | 2              | 2                | 7             |
 
 </div>
+
+<img v-click="[7]"
+  class="absolute top-10 h-75"
+  src="/images/stryker-dashboard.png"
+/>
 
 <style>
 .col-bottom {
@@ -292,7 +309,9 @@ clicks: 7
 
 ## Fine-Tuning
 
-Stryker provides many bells & whistles for fine-tuning using either [CLI or config file](https://stryker-mutator.io/docs/stryker-net/configuration/).
+🔧 Stryker provides many bells & whistles for fine-tuning using either [CLI or config file](https://stryker-mutator.io/docs/stryker-net/configuration/).
+
+<v-clicks>
 
 Some examples:
 
@@ -301,14 +320,20 @@ Some examples:
 - [`mutation-level`](https://stryker-mutator.io/docs/stryker-net/configuration/#mutation-level-level): high level categories (`Basic`, `Standard`, `Advanced`, `Complete`)
 - [`coverage-analysis`](https://stryker-mutator.io/docs/stryker-net/configuration/#coverage-analysis-string): short circuit logic vs "everything in isolation"
 
+</v-clicks>
+
+<v-clicks>
+
 Also nice: use git as baseline, only test things that have changed recently
 
 - [`since`](https://stryker-mutator.io/docs/stryker-net/configuration/#since-flag-committish): git "committish" (i.e. commit hash, tag, etc)
 - [`with-baseline`](https://stryker-mutator.io/docs/stryker-net/configuration/#with-baseline-flag-committish) (experimental): similar to `since`, but uses previous reports
 
+</v-clicks>
+
 ---
 
-## Available in many languages
+## Mutation Testing: Available in many languages
 
 - JavaScript: https://stryker-mutator.io/docs/stryker-js/
 - Scala: https://stryker-mutator.io/docs/stryker4s/
@@ -324,10 +349,10 @@ clicks: 4
 
 <v-clicks>
 
-- none-invasive: no code changes required!
-- great for finding corner cases
-- requires a lot of resources: use wisely
-- great addition to our "Testing Toolbelt":
+- 😎 none-invasive: no code changes required!
+- 🔎 great for discovering important corner cases
+- 🤔 requires a lot of resources: use wisely
+- 🥳 great addition to our "Testing Toolbelt"
   - Test-Driven Development (TDD)
   - Approval Testing
   - Property-Based Testing (PBT)
