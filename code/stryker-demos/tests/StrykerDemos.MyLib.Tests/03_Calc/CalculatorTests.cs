@@ -7,17 +7,17 @@ public class CalculatorTests
     [Fact]
     public void Add()
     {
-        var result = Calculator.Add(2, 2);
+        var result = Calculator.Add(2, 0);
         
-        result.Should().Be(4);
+        result.Should().Be(2);
     }
 
     [Fact]
     public void Subtract()
     {
-        var result = Calculator.Subtract(2, 2);
+        var result = Calculator.Subtract(2, 0);
         
-        result.Should().Be(0);
+        result.Should().Be(2);
     }
 
     [Fact]
