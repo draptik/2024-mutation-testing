@@ -26,10 +26,4 @@ public static class FizzBuzzer
 
         return number.ToString(NumberFormatInfo.InvariantInfo);
     }
-
-    public static IEnumerable<string> FizzBuzzNumbers(int maxNumber)
-    {
-        List<int> numbers = [..Enumerable.Range(1, maxNumber)];
-        return numbers.Select(FizzBuzz);
-    }
 }
