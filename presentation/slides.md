@@ -354,11 +354,18 @@ image: "/images/logo-fsharp.png"
 
 ## Mutation Testing: Available in many languages
 
-- JavaScript: https://stryker-mutator.io/docs/stryker-js/
-- Scala: https://stryker-mutator.io/docs/stryker4s/
-- Java: https://pitest.org/
-- Python: https://mutatest.readthedocs.io
-- etc (search for "your-programming-language mutation test")
+Overview: https://github.com/theofidry/awesome-mutation-testing
+
+- <logos-javascript /> JavaScript: https://stryker-mutator.io/docs/stryker-js/
+- <logos-scala /> Scala: https://stryker-mutator.io/docs/stryker4s/
+- <logos-java /> Java: https://pitest.org/
+- <logos-python /> Python: https://mutatest.readthedocs.io
+- <vscode-icons-file-type-cpp3 /> C/C++: https://github.com/mull-project/mull
+- <logos-rust /> Rust: https://mutants.rs/
+- <devicon-go /> Go: https://github.com/zimmski/go-mutesting
+- <logos-haskell-icon /> Haskell: https://hackage.haskell.org/package/MuCheck
+- etc. (search for "your-programming-language mutation test")
+
 
 ---
 clicks: 4

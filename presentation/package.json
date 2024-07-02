@@ -16,6 +16,8 @@
   "devDependencies": {
     "@iconify-json/logos": "^1.1.43",
     "@iconify-json/mdi": "^1.1.66",
+    "@iconify-json/vscode-icons": "1.1.35",
+    "@iconify-json/devicon": "1.1.45",
     "playwright-chromium": "^1.44.1"
   }
 }
