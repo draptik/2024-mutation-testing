@@ -1,4 +1,8 @@
-# Stryker talk
+# Talk: Mutation Testing w/ Stryker
 
 - Code: See [./code/stryker-demos/README.md](./code/stryker-demos/README.md)
 - Slides: See [./presentation/README.md](./presentation/README.md)
+
+## Online presentation
+
+- [DWX 2024](https://draptik.github.io/2024-07-dwx24-mutation-testing/1), [PDF DWX 2024](./presentation//mutation-testing-dwx-2024.pdf)

@@ -1,10 +1,14 @@
-To start the slide show:
+To start the slide show locally:
 
 - `npm install` (only needed for initial setup or when `package.json` was modified)
 - `npm run dev` (or run `./start-presentation.sh`)
 - visit http://localhost:3030
 
 [Slidev documentation](https://sli.dev/)
+
+## PDF
+
+- [mutation-testing-dwx-2024.pdf](./mutation-testing-dwx-2024.pdf)
 
 ## Images
 
