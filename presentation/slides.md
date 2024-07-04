@@ -88,6 +88,10 @@ backgroundSize: contain
 
 </v-clicks>
 
+<img v-click='[2]'
+  class="absolute bottom-10 right-85 w-50"
+  src="/images/mutant-monster3.jpg"
+/>
 
 
 ---
