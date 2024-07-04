@@ -37,6 +37,11 @@ src: ./pages/01-intro.md
 
 </v-clicks>
 
+<img
+  class="absolute bottom-10 right-15 h-40"
+  src="/images/metrics-weights.png"
+/>
+
 
 ---
 
