@@ -47,9 +47,13 @@ src: ./pages/01-intro.md
 
 ## Test coverage
 
+<v-clicks>
+
 - 🎓 defines the percentage of covered code
 - ✅ 100% test coverage means, every line of code is executed at least once
 - ⚠️ 100% test coverage **does not mean that every scenario / use-case is covered**
+
+</v-clicks>
 
 ---
 
@@ -193,12 +197,18 @@ Some are optimized for .NET:
 
 ## Isn't this slow?
 
+<v-clicks>
+
 - Short answer: YES
 - BUT: **These frameworks have smart heuristics for short circuiting**
 - CI: Don't include this in normal commits
-- CI: use "Nightly", or local (for exploratory analysis)
+- CI: use "Nightly", or local (for **exploratory analysis**)
 - Google uses Mutation Testing on really large projects: https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/
-  - It is still slow
+  - "[...] a codebase of **two billion lines of code** and more than **150,000,000 tests**"
+  - "[...] used by more than **24,000 developers** on more than **1,000 projects**"
+  - It is still slow, but not as slow as you might think
+
+</v-clicks>
 
 <img
   class="absolute top-5 right-110 h-25"
@@ -216,9 +226,9 @@ image: /images/mutant-monster6.jpg
 
 [https://stryker-mutator.io/docs/stryker-net/technical-reference/research/#comparison](https://stryker-mutator.io/docs/stryker-net/technical-reference/research/#comparison)
 
-- mutate source code
-- mutate byte code
-- mutant schemata (aka "mutant switching")
+- mutate **source code**
+- mutate **byte code**
+- **mutant schemata** (aka "mutant switching")
 
 👉 Stryker.NET uses "mutant schemata"
 
