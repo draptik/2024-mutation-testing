@@ -62,4 +62,10 @@
     p {
         font-family: Inter;
     }
+
+    li {
+        strong {
+            font-size: 1.1em;
+        }
+    }
 }

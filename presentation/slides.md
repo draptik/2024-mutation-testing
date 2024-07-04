@@ -33,9 +33,10 @@ src: ./pages/01-intro.md
 
 - "It is wrong to suppose that if you can't measure it, you can't manage it - **a costly myth**." - W. Edwards Deming
 - **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**. 
-- **Goodhart's Law**, states that "**When a measure becomes a target, it ceases to be a good measure**"  
+- **Goodhart's Law** states that **"When a measure becomes a target, it ceases to be a good measure"**
 
 </v-clicks>
+
 
 ---
 
