@@ -17,3 +17,7 @@ Slides 👇
   class="absolute top-10 right-30 h-70"
   src="/images/slides.png"
 />
+
+<p style="font-size:0.75em">
+Image sources: <a href="https://pixabay.com/" target="_blank">pixabay.com</a> and <a href="https://perchance.org" target="_blank">perchance.org</a>
+</p>
