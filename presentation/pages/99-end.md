@@ -9,7 +9,7 @@
 Slides 👇
 
 - QR Code or
-- https://draptik.github.io/2024-07-dwx24-mutation-testing
+- https://draptik.github.io/2024-09-seneca-mutation-testing/
 - sample code:
   https://github.com/draptik/2024-mutation-testing
 
@@ -19,5 +19,7 @@ Slides 👇
 />
 
 <p style="font-size:0.75em">
-Image sources: <a href="https://pixabay.com/" target="_blank">pixabay.com</a> and <a href="https://perchance.org" target="_blank">perchance.org</a>
+Image sources: <a href="https://pixabay.com/" target="_blank">pixabay.com</a> and
+<a href="https://perchance.org/ai-photo-generator" target="_blank">perchance.org/ai-photo-generator</a>
+
 </p>
