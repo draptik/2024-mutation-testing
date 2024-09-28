@@ -33,7 +33,7 @@ jobs:
             npm run build -- --base '/${{ env.TARGET_REPO_NAME }}/'
 
       - name: Deploy to target repository
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.6.6
         with:
           single-commit: true
           folder: ${{ env.PRESENTATION_FOLDER }}/dist # The folder the action should deploy
