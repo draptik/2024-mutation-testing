@@ -207,7 +207,8 @@ Some are optimized for .NET:
   - "[...] a codebase of **two billion lines of code** and more than **150,000,000 tests**"
   - "[...] used by more than **24,000 developers** on more than **1,000 projects**"
   - It is still slow, but not as slow as you might think
-
+  - 🎧 SE Radio 632: Goran Petrovic on Mutation Testing at Google:
+    - https://se-radio.net/2024/09/se-radio-632-goran-petrovic-on-mutation-testing-at-google/
 </v-clicks>
 
 <img
