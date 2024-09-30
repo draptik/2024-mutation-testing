@@ -6,3 +6,6 @@
 ## Online presentation
 
 - [DWX 2024](https://draptik.github.io/2024-07-dwx24-mutation-testing/1), [PDF DWX 2024](./presentation//mutation-testing-dwx-2024.pdf)
+- SoCraTes Day Franken 2024
+- SoCraTesAT 2024
+- [Seneca 2024](https://draptik.github.io/2024-09-seneca-mutation-testing/1)
