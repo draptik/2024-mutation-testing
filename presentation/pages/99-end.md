@@ -1,17 +1,17 @@
 # Thank You!
 
-- <mdi-email /> patrick.drechsler@mathema.de
-- <logos-github-icon /> https://github.com/draptik
-- <mdi-web /> Blog: https://draptik.github.io
-- <logos-mastodon-icon /> [@drechsler@floss.social](https://floss.social/@drechsler)
-- <logos-linkedin-icon /> https://www.linkedin.com/in/patrick-drechsler-draptik/
+- <mdi-email /> <patrick.drechsler@mathema.de>
+- <logos-github-icon /> <https://github.com/draptik>
+- <mdi-web /> <https://draptik.github.io/talks/>
+- <logos-mastodon-icon /> <https://floss.social/@drechsler>
+- <logos-linkedin-icon /> <https://www.linkedin.com/in/patrick-drechsler-draptik/>
 
 Slides 👇
 
 - QR Code or
-- https://draptik.github.io/2024-09-seneca-mutation-testing/
+- <https://draptik.github.io/2024-10-crete-mutation-testing/>
 - sample code:
-  https://github.com/draptik/2024-mutation-testing
+  <https://github.com/draptik/2024-mutation-testing>
 
 <img
   class="absolute top-10 right-30 h-70"
@@ -19,7 +19,5 @@ Slides 👇
 />
 
 <p style="font-size:0.75em">
-Image sources: <a href="https://pixabay.com/" target="_blank">pixabay.com</a> and
-<a href="https://perchance.org/ai-photo-generator" target="_blank">perchance.org/ai-photo-generator</a>
-
+Image sources: <a href="https://pixabay.com/" target="_blank">pixabay.com</a> and <a href="https://perchance.org/ai-photo-generator" target="_blank">perchance.org/ai-photo-generator</a>
 </p>
