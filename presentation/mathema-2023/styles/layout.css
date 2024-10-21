@@ -85,4 +85,8 @@
     color: var(--slidev-theme-primary);
   }
 
+  img.w-50.object-fit-contain[src="./images/logo_socrates.png"] {
+    margin-top: -3rem;
+    width: 11rem;
+  }
 }

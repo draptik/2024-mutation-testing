@@ -2,9 +2,9 @@
 theme: ./mathema-2023
 defaults:
   layout: "default-with-footer"
-title: 'Wir testen. Aber testen wir auch gut genug?'
-occasion: "SENECA 2024"
-occasionLogoUrl: "./images/logo-seneca24.png"
+title: 'Of course we test. But who tests our tests?'
+occasion: "SoCraTes Crete 2024"
+occasionLogoUrl: "./images/logo_socrates.png"
 company: "MATHEMA GmbH"
 presenter: "Patrick Drechsler"
 contact: "patrick.drechsler@mathema.de"
