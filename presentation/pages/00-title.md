@@ -1,7 +1,7 @@
-# Of course we test -
-# But who tests our tests?
+# Wir testen. Aber testen
+# wir auch gut genug?
 
-### An introduction to Mutation Testing w/ Stryker.NET
+### Eine Einführung in Mutation Testing mit Stryker.NET
 
 Patrick Drechsler
 

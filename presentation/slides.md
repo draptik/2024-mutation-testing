@@ -2,9 +2,9 @@
 theme: ./mathema-2023
 defaults:
   layout: "default-with-footer"
-title: 'Of course we test. But who tests our tests?'
-occasion: "SoCraTes Crete 2024"
-occasionLogoUrl: "./images/logo_socrates.png"
+title: 'Wir testen. Aber testen wir auch gut genug?'
+occasion: "DDC 2024"
+occasionLogoUrl: "./images/logo_ddc24.jpg"
 company: "MATHEMA GmbH"
 presenter: "Patrick Drechsler"
 contact: "patrick.drechsler@mathema.de"

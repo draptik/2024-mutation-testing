@@ -9,7 +9,7 @@
 Slides 👇
 
 - QR Code or
-- <https://draptik.github.io/2024-10-crete-mutation-testing/>
+- <https://draptik.github.io/2024-11-ddc-mutation-testing/>
 - sample code:
   <https://github.com/draptik/2024-mutation-testing>
 
