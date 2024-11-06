@@ -9,3 +9,4 @@
 - SoCraTes Day Franken 2024
 - SoCraTesAT 2024
 - [Seneca 2024](https://draptik.github.io/2024-09-seneca-mutation-testing/1)
+- [SoCraTes Crete 2024](https://draptik.github.io/2024-10-crete-mutation-testing)
