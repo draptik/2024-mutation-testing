@@ -32,7 +32,7 @@ src: ./pages/01-intro.md
 <v-clicks>
 
 - "It is wrong to suppose that if you can't measure it, you can't manage it - **a costly myth**." - W. Edwards Deming
-- **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**. 
+- **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**.
 - **Goodhart's Law** states that **"When a measure becomes a target, it ceases to be a good measure"**
 
 </v-clicks>
@@ -41,7 +41,6 @@ src: ./pages/01-intro.md
   class="absolute bottom-10 right-15 h-40"
   src="/images/metrics-weights.png"
 />
-
 
 ---
 
@@ -91,7 +90,7 @@ backgroundSize: contain
 
 <v-clicks>
 
-- Mutation testing **introduces changes to your code**, then runs your unit tests against **the changed code**. 
+- Mutation testing **introduces changes to your code**, then runs your unit tests against **the changed code**.
 - the "change" is called a **mutant**
 - If our test suite is ok for a "mutant:" Ups, we missed something
 
@@ -101,7 +100,6 @@ backgroundSize: contain
   class="absolute bottom-10 right-85 w-50"
   src="/images/mutant-monster3.jpg"
 />
-
 
 ---
 layout: two-cols-header
@@ -160,7 +158,6 @@ public void DoMagic_works(int input, string expected)
   src="/images/mutant-monster2.jpg"
 />
 
-
 <style>
 .col-bottom {
   align-self: end;
@@ -173,7 +170,6 @@ public void DoMagic_works(int input, string expected)
   column-gap: 20px; /* Adjust the gap size as needed */
 }
 </style>
-
 
 ---
 layout: image-right
@@ -203,12 +199,12 @@ Some are optimized for .NET:
 - BUT: **These frameworks have smart heuristics for short circuiting**
 - CI: Don't include this in normal commits
 - CI: use "Nightly", or local (for **exploratory analysis**)
-- Google uses Mutation Testing on really large projects: https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/
+- Google uses Mutation Testing on really large projects: <https://research.google/pubs/practical-mutation-testing-at-scale-a-view-from-google/>
   - "[...] a codebase of **two billion lines of code** and more than **150,000,000 tests**"
   - "[...] used by more than **24,000 developers** on more than **1,000 projects**"
   - It is still slow, but not as slow as you might think
   - 🎧 SE Radio 632: Goran Petrovic on Mutation Testing at Google:
-    - https://se-radio.net/2024/09/se-radio-632-goran-petrovic-on-mutation-testing-at-google/
+    - <https://se-radio.net/2024/09/se-radio-632-goran-petrovic-on-mutation-testing-at-google/>
 </v-clicks>
 
 <img
@@ -242,7 +238,6 @@ image: /images/mutant-monster6.jpg
   src="/images/cute-zombie3.png"
 />
 
-
 ---
 
 ## Reports: HTML (Overview)
@@ -253,7 +248,7 @@ image: /images/mutant-monster6.jpg
 />
 
 ---
- 
+
 ## Reports: HTML (Details)
 
 <img
@@ -375,18 +370,17 @@ image: "/images/logo-fsharp.png"
 
 ## Mutation Testing: Available in many languages
 
-Overview: https://github.com/theofidry/awesome-mutation-testing
+Overview: <https://github.com/theofidry/awesome-mutation-testing>
 
-- <logos-javascript /> JavaScript: https://stryker-mutator.io/docs/stryker-js/
-- <logos-scala /> Scala: https://stryker-mutator.io/docs/stryker4s/
-- <logos-java /> Java: https://pitest.org/
-- <logos-python /> Python: https://mutatest.readthedocs.io
-- <vscode-icons-file-type-cpp3 /> C/C++: https://github.com/mull-project/mull
-- <logos-rust /> Rust: https://mutants.rs/
-- <devicon-go /> Go: https://github.com/zimmski/go-mutesting
-- <logos-haskell-icon /> Haskell: https://hackage.haskell.org/package/MuCheck
+- <logos-javascript /> JavaScript: <https://stryker-mutator.io/docs/stryker-js/>
+- <logos-scala /> Scala: <https://stryker-mutator.io/docs/stryker4s/>
+- <logos-java /> Java: <https://pitest.org/>
+- <logos-python /> Python: <https://mutatest.readthedocs.io>
+- <vscode-icons-file-type-cpp3 /> C/C++: <https://github.com/mull-project/mull>
+- <logos-rust /> Rust: <https://mutants.rs/>
+- <devicon-go /> Go: <https://github.com/zimmski/go-mutesting>
+- <logos-haskell-icon /> Haskell: <https://hackage.haskell.org/package/MuCheck>
 - etc. (search for "your-programming-language mutation test")
-
 
 ---
 clicks: 4
@@ -410,7 +404,6 @@ clicks: 4
   class="absolute top-40 right-20 w-100"
   src="/images/toolbelt.png"
 />
-
 
 ---
 src: ./pages/99-end.md
