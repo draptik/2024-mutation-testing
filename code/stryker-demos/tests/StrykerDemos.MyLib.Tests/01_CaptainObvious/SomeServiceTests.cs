@@ -1,7 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+
 using StrykerDemos.MyLib._01_CaptainObvious;
 
 namespace StrykerDemos.MyLib.Tests._01_CaptainObvious;
 
+[SuppressMessage("Style", "IDE0008:Use explicit type")]
 public class SomeServiceTests
 {
     [Fact]

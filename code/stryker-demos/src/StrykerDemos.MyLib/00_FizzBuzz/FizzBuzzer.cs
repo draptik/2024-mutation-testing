@@ -1,7 +1,10 @@
-﻿using System.Globalization;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+// ReSharper disable ConvertIfStatementToReturnStatement
 
 namespace StrykerDemos.MyLib._00_FizzBuzz;
 
+[SuppressMessage("Style", "IDE0046:Convert to conditional expression")]
 public static class FizzBuzzer
 {
     public static string FizzBuzz(int number)

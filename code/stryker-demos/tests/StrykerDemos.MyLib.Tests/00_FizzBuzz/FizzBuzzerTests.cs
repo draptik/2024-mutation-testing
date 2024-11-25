@@ -1,7 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+
 using StrykerDemos.MyLib._00_FizzBuzz;
 
 namespace StrykerDemos.MyLib.Tests._00_FizzBuzz;
 
+[SuppressMessage("Style", "IDE0022:Use block body for method")]
 public class FizzBuzzerTests
 {
     private static string FizzBuzz(int number) => 

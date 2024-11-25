@@ -1,7 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+
 using StrykerDemos.MyLib._03_Calc;
 
 namespace StrykerDemos.MyLib.Tests._03_Calc;
 
+[SuppressMessage("Style", "IDE0008:Use explicit type")]
 public class CalculatorTests
 {
     [Fact]

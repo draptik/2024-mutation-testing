@@ -1,7 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+
 using StrykerDemos.MyLib._02_OrderProcessing;
 
 namespace StrykerDemos.MyLib.Tests._02_OrderProcessing;
 
+[SuppressMessage("Style", "IDE0022:Use block body for method")]
 public class OrderProcessorTests
 {
     private readonly OrderProcessor _sut = new();

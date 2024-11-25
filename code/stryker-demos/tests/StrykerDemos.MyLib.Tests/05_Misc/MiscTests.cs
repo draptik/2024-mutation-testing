@@ -1,7 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+
 using StrykerDemos.MyLib._05_Misc;
 
 namespace StrykerDemos.MyLib.Tests._05_Misc;
 
+[SuppressMessage("Style", "IDE0022:Use block body for method")]
 public class MiscTests
 {
     [Theory]
