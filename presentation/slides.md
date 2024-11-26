@@ -29,8 +29,8 @@ src: ./pages/01-intro.md
 
 <v-clicks>
 
-- <span v-mark.strike-through.gray="3">"If you can't measure it, you can't manage it"</span> - *attributed* to W. Edwards Deming
-- "**It is wrong** to suppose that if you can't measure it, you can't manage it - **a costly myth**." - the actual quote by W. Edwards Deming,  [The New Economics (1993)](https://deming.org/myth-if-you-cant-measure-it-you-cant-manage-it/)
+- <span v-mark.strike-through.gray="3">"If you can't measure it, you can't manage it"</span> - *attributed* to W. Edwards Deming 🤔
+- "**It is wrong** to suppose that if you can't measure it, you can't manage it - **a costly myth**." - the actual quote by W. Edwards Deming,  [The New Economics (1993)](https://deming.org/myth-if-you-cant-measure-it-you-cant-manage-it/) 👀
 </v-clicks>
 
 <br/>
