@@ -43,8 +43,8 @@ src: ./pages/01-intro.md
 </v-clicks>
 
 <img
-  class="absolute top-5 right-2 h-30"
-  src="/images/metrics-weights.png"
+  class="absolute bottom-15 right-90 h-35"
+  src="/images/metrics-charts.png"
 />
 
 ---
