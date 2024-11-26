@@ -220,7 +220,7 @@ Some are optimized for .NET:
 
 ---
 layout: image-right
-image: /images/mutant-monster6.jpg
+image: "/images/mutant-monster6.jpg"
 ---
 
 ## Mutation Strategies
@@ -236,13 +236,11 @@ image: /images/mutant-monster6.jpg
 👉 Stryker.NET uses "mutant schemata"
 
 ---
+layout: image-right
+image: /images/cute-zombie3.png
+---
 
 ## Live coding
-
-<img
-  class="absolute top-5 right-80 h-125"
-  src="/images/cute-zombie3.png"
-/>
 
 ---
 
