@@ -103,6 +103,7 @@ backgroundSize: contain
 
 <img v-click='[2]'
   class="absolute bottom-10 right-85 w-50"
+  style="border-radius: 25%"
   src="/images/mutant-monster3.jpg"
 />
 
@@ -117,7 +118,7 @@ clicks: 2
 
 Production code:
 
-```csharp
+```cs
 public string DoMagic(int i) => i < 18 ? "child" : "adult"
 ```
 
@@ -126,7 +127,7 @@ public string DoMagic(int i) => i < 18 ? "child" : "adult"
 - `dotnet stryker`
 - it creates a mutant replacing `<` with `<=`
 
-```csharp
+```cs
 public string DoMagic(int i) => i <= 18 ? "child" : "adult"
 ```
 
@@ -147,7 +148,7 @@ public string DoMagic(int i) => i <= 18 ? "child" : "adult"
 
 Test suite (**100% code coverage!**):
 
-```csharp
+```cs
 [Theory]
 [InlineData(10, "child")]
 [InlineData(20, "adult")]
