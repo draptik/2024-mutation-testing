@@ -27,18 +27,23 @@ src: ./pages/01-intro.md
 
 ## Let's talk about "Metrics"...
 
-[https://www.nngroup.com/articles/campbells-law/](https://www.nngroup.com/articles/campbells-law/)
-
 <v-clicks>
 
-- "It is wrong to suppose that if you can't measure it, you can't manage it - **a costly myth**." - W. Edwards Deming
-- **Campbell's Law** states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**.
-- **Goodhart's Law** states that **"When a measure becomes a target, it ceases to be a good measure"**
+- <span v-mark.strike-through.gray="3">"If you can't measure it, you can't manage it"</span> - *attributed* to W. Edwards Deming
+- "**It is wrong** to suppose that if you can't measure it, you can't manage it - **a costly myth**." - the actual quote by W. Edwards Deming,  [The New Economics (1993)](https://deming.org/myth-if-you-cant-measure-it-you-cant-manage-it/)
+</v-clicks>
+
+<br/>
+
+<v-clicks at="4">
+
+- [**Campbell's Law**](https://www.nngroup.com/articles/campbells-law) states that **the more important a metric is** in social decision making, the **more likely it is to be manipulated**.
+- **Goodhart's Law** states that **"When a measure becomes a target, it ceases to be a good measure."**
 
 </v-clicks>
 
 <img
-  class="absolute bottom-10 right-15 h-40"
+  class="absolute top-5 right-2 h-30"
   src="/images/metrics-weights.png"
 />
 
