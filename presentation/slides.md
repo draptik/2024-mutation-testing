@@ -25,7 +25,7 @@ src: ./pages/01-intro.md
 
 ---
 
-## Let's talk about "Metrics"...
+## Let's talk about "Metrics" ...
 
 <v-clicks>
 
